@@ -12,7 +12,13 @@ class UrlMappings {
             action = [GET: "getmetadata"]
         }
         "/car"(resources: "car")
+        "/car/metadata"(controller: "car") {
+            action = [GET: "getmetadata"]
+        }
         "/home"(resources: "home")
+        "/home/metadata"(controller: "home") {
+            action = [GET: "getmetadata"]
+        }
 
         "/"(view: "/index")
         "500"(view: '/error')
